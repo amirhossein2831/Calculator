@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#setKeyPress" prefHeight="340.0" prefWidth="250.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.Controller.CalculatorController">
+   <children>
+      <GridPane fx:id="gridPane" hgap="5.0" layoutX="10.0" layoutY="76.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#setKeyPress" prefHeight="250.0" prefWidth="230.0" style="-fx-background-color: black; -fx-background-radius: 10px;" vgap="5.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="nine" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="9" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="dot" layoutX="72.0" layoutY="250.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="." GridPane.rowIndex="3" />
+            <Button fx:id="minus" layoutX="10.0" layoutY="250.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-color: #01FEED; -fx-background-radius: 10px;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="sum" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-color: #01FEED; -fx-background-radius: 10px;" text="+" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="equal" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="129.0" style="-fx-background-radius: 10px; -fx-background-color: #FF0000;" text="=" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Button fx:id="divide" layoutX="197.0" layoutY="190.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-color: #01FEED; -fx-background-radius: 10px;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="multi" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-color: #01FEED; -fx-background-radius: 10px;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="reset" layoutX="137.0" layoutY="315.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="131.0" style="-fx-background-radius: 10px; -fx-background-color: #008080;" text="Reset" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Button fx:id="delete" layoutX="137.0" layoutY="71.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px; -fx-background-color: #008080;" text="Ac" GridPane.columnIndex="3" />
+            <Button fx:id="eight" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="8" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="four" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="seven" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="7">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="six" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="three" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="zero" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="one" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="two" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="five" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="62.0" style="-fx-background-radius: 10px;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <TextField fx:id="text" layoutX="10.0" layoutY="10.0" prefHeight="59.0" prefWidth="230.0" promptText="0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
